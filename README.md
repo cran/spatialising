@@ -5,17 +5,25 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/Nowosad/spatialising/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Nowosad/spatialising/actions/workflows/R-CMD-check.yaml)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/spatialising)](https://CRAN.R-project.org/package=spatialising)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![Codecov test
 coverage](https://codecov.io/gh/Nowosad/spatialising/branch/main/graph/badge.svg)](https://app.codecov.io/gh/Nowosad/spatialising?branch=main)
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/Nowosad/spatialising/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Nowosad/spatialising/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of **spatialising** is to perform simulations of binary spatial
 raster data using the Ising model.
 
 ## Installation
+
+You can install the released version of **spatialising** from CRAN with:
+
+``` r
+install.packages("spatialising")
+```
 
 You can install the development version of **spatialising** from
 [GitHub](https://github.com/) with:
