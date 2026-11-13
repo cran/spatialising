@@ -55,13 +55,16 @@ optim_params = optim_sa(fun = optimize_model,
 optim_params$par
 
 ## -----------------------------------------------------------------------------
-sim_optim = kinetic_ising(maine2016, 
-                          B = optim_params$par[1], J = optim_params$par[2], 
+sim_optim = kinetic_ising(maine2013,
+                          B = optim_params$par[1], J = optim_params$par[2],
                           iter = ncell(maine2013) * 3, inertia = 150)
 plot(sim_optim)
 
 ## -----------------------------------------------------------------------------
-sim_optim_metrics = c(composition_index(sim_optim), texture_index(sim_optim))             
+optim_params$function_value
+
+## -----------------------------------------------------------------------------
+sim_optim_metrics = c(composition_index(sim_optim), texture_index(sim_optim))
 dist(rbind(maine2016_metrics, sim_optim_metrics))[[1]]
 
 ## -----------------------------------------------------------------------------
